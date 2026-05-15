@@ -1,8 +1,8 @@
-const modalLinks = document.querySelectorAll('.modal-link');
-const closeButtons = document.querySelectorAll('.close-modal');
+const modalLinks = document.querySelectorAll('.projects__list-modal');
+const closeButtons = document.querySelectorAll('.modal__close-button');
 const modals = document.querySelectorAll('.modal');
 const scrollTopBtn = document.getElementById('scrollTopBtn');
-const typingEl = document.querySelector('.typing-text');
+const typingEl = document.querySelector('.header__content-title');
 
 const openModal = modal => {
   if (!modal) return;
