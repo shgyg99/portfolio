@@ -115,7 +115,7 @@ img {
   color: var(--text-color);
   max-width: 1500px;
   display: flex;
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 30px;
   border-radius: 10px;
 }
@@ -135,7 +135,7 @@ img {
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 30%;
+  opacity: 50%;
 
 }
 /* Header */
@@ -213,8 +213,8 @@ img {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: flex; /* اضافه شود */
-  align-items: center; /* اضافه شود */
+  display: flex;
+  align-items: center;
   justify-content: center;
   z-index: 1;
 
@@ -228,7 +228,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center; /* اضافه شود - وسط چینی عکس */
+  object-position: center center;
   display: block;
   cursor: default;
   opacity: 80%;
@@ -467,8 +467,10 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.76);
   z-index: 10000;
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
@@ -487,8 +489,9 @@ img {
   background: var(--secondary-color);
   padding: 2rem;
   border-radius: 18px;
-  max-width: 520px;
-  max-height: 520px;
+  max-width: 1000px;
+  height: auto;
+  max-height: 1000px;
   overflow-y: auto;
   position: relative;
   animation: slideIn 0.5s ease;
@@ -531,12 +534,6 @@ img {
   color: var(--border-color);
 }
 
-#model7 {
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
 
 @keyframes slideIn {
   from {
