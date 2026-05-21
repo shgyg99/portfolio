@@ -495,7 +495,6 @@ img {
   overflow-y: auto;
   position: relative;
   animation: slideIn 0.5s ease;
-  font-family: var(--handwritting-font);
 }
 
 .modal__content-title {
