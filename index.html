@@ -158,31 +158,24 @@
 
           <article id="a-3">
             <a href="#" class="projects__list-modal" data-modal="modal3">
-              Handwritten Mathematical Expression Recognition with Persian
-              Numerals
+              Medical Image Segmentation
             </a>
           </article>
 
           <article id="a-4">
             <a href="#" class="projects__list-modal" data-modal="modal4">
-              Medical Image Segmentation
+              Speech-to-Text
             </a>
           </article>
 
           <article id="a-5">
             <a href="#" class="projects__list-modal" data-modal="modal5">
-              Speech-to-Text
+              Language Modeling
             </a>
           </article>
 
           <article id="a-6">
             <a href="#" class="projects__list-modal" data-modal="modal6">
-              Language Modeling
-            </a>
-          </article>
-
-          <article id="a-7">
-            <a href="#" class="projects__list-modal" data-modal="modal7">
               Image Captioning
             </a>
           </article>
@@ -234,28 +227,6 @@
       <div class="modal__content">
         <span class="modal__close-button">&times;</span>
 
-        <h3 class="modal__content-title">
-          Handwritten Mathematical Expression Recognition with Persian Numerals
-        </h3>
-        <a class="modal__content-icon" href="#"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a class="modal__content-icon" href="#"
-          ><i class="fa-solid fa-file"></i
-        ></a>
-        <p>
-          Proposed novel ResNet-18/Transformer hybrid architecture for HME
-          recognition. Demonstrated cross-cultural OCR applicability through
-          comprehensive experiments. Published dataset and code openly to
-          support multilingual AI research.
-        </p>
-      </div>
-    </div>
-
-    <div class="modal" id="modal4">
-      <div class="modal__content">
-        <span class="modal__close-button">&times;</span>
-
         <h3 class="modal__content-title">Medical Image Segmentation</h3>
         <a class="modal__content-icon" href="#"
           ><i class="fab fa-github"></i
@@ -270,7 +241,7 @@
       </div>
     </div>
 
-    <div class="modal" id="modal5">
+    <div class="modal" id="modal4">
       <div class="modal__content">
         <span class="modal__close-button">&times;</span>
         <h3 class="modal__content-title">Speech-to-Text</h3>
@@ -287,7 +258,7 @@
       </div>
     </div>
 
-    <div class="modal" id="modal6">
+    <div class="modal" id="modal5">
       <div class="modal__content">
         <span class="modal__close-button">&times;</span>
         <h3 class="modal__content-title">Language Modeling</h3>
@@ -305,31 +276,78 @@
       </div>
     </div>
 
-    <div class="modal" id="modal7">
+    <div class="modal" id="modal6">
       <div class="modal__content">
         <span class="modal__close-button">&times;</span>
         <h3 class="modal__content-title">Image Captioning</h3>
-        <a class="modal__content-icon" href="https://github.com/shgyg99/ImageCaptioning"
+        <a
+          class="modal__content-icon"
+          href="https://github.com/shgyg99/ImageCaptioning"
           ><i class="fab fa-github"></i
         ></a>
-        <a class="modal__content-icon" href="#"
-          ><i class="fa-brands fa-hugging-face"></i
-        ></a>
-        <p>
-          Engineered an innovative web application utilizing a deep learning
-          model via PyTorch, generating accurate image captions with a
-          performance score of 2.8 on the Flickr dataset to enhance user
-          engagement.
-        </p>
 
-        <iframe
-          src="https://shgyg99-image-captioning.hf.space"
-          frameborder="0"
-          width="700"
-          height="400"
-        ></iframe>
+        <a href="#image-captioning" class="modal__content-icon pg-btn"
+          >PLAYGROUND</a
+        >
+        <p>
+          This Image Captioning model uses an Encoder-Decoder architecture. The
+          encoder is a pre-trained ResNet50 that extracts visual features from
+          input images into 2048-dimensional vectors. The decoder is a 2-layer
+          LSTM with 512 hidden units that generates captions word by word, using
+          an embedding layer of size 256. Dropout of 0.5 is applied to prevent
+          overfitting. The model was trained on the Flickr30k dataset containing
+          31,000 images with 5 captions each. The training used Cross-Entropy
+          Loss with AdamW optimizer (lr=0.0001) for 20 epochs with batch size
+          64. Teacher forcing was applied with 0.8 probability. The final model
+          achieved a validation loss of 2.34 and BLEU-4 score of 0.31. The
+          trained model is containerized with Docker and deployed as a web app
+          on Hugging Face Spaces.
+        </p>
       </div>
     </div>
+
+    <!-- Playgrounds -->
+    <section class="playgrounds" id="playgrounds">
+      <div class="playgrounds__container container">
+        <h2 class="container__title">Playgrounds</h2>
+        <div class="playgrounds__list">
+          <div class="playground" id="image-captioning">
+            <iframe
+              src="https://shgyg99-image-captioning.hf.space"
+              frameborder="0"
+            ></iframe>
+            <div class="playground-content">
+              <h3>🖼️ Image Captioning Web App</h3>
+              <p>
+                A deep learning-based web application that generates descriptive
+                captions for any uploaded image. Built with
+                <strong>Flask </strong>backend, ResNet50 encoder + LSTM decoder
+                architecture, trained on Flickr30k dataset. Containerized with
+                Docker and deployed on Hugging Face Spaces.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://huggingface.co/spaces/shgyg99/Image-Captioning"
+                  target="_blank"
+                  class="btn"
+                >
+                  🚀 Live Demo (Hugging Face)
+                </a>
+                <a
+                  href="https://github.com/shgyg99/ImageCaptioning"
+                  target="_blank"
+                  class="btn"
+                >
+                  📁 GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="language-modeling playground"></div>
+          <div class="speech2text playground"></div>
+        </div>
+      </div>
+    </section>
 
     <button id="scrollTopBtn" aria-label="Scroll to top">
       <i class="fa-solid fa-angle-up"></i>
