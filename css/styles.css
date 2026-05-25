@@ -107,7 +107,7 @@ img {
 }
 
 .container {
-  font-family: "Delius", cursive;
+  font-family: "Sniglet", system-ui;
   background: var(--secondary-color);
   backdrop-filter: blur(50px);
   color: var(--text-color);
@@ -332,7 +332,7 @@ img {
   border-radius: 15px;
   text-align: center;
   height: 80px;
-  width: 100%;
+  width: 100px;
   max-width: 100px;
   transition: all 0.2s ease-in-out;
 }
@@ -407,7 +407,7 @@ img {
 }
 
 .modal {
-  font-family: "Delius", cursive;
+  font-family: "Sniglet", system-ui;
   display: none;
   position: fixed;
   top: 0;
