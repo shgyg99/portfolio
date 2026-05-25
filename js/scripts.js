@@ -1,5 +1,6 @@
 const modalLinks = document.querySelectorAll('.projects__list-modal');
 const closeButtons = document.querySelectorAll('.modal__close-button');
+const pgButton = document.querySelectorAll('.pg-btn');
 const modals = document.querySelectorAll('.modal');
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 const typingEl = document.querySelector('.header__content-title');
@@ -35,6 +36,13 @@ modalLinks.forEach(link => {
 });
 
 closeButtons.forEach(btn => {
+  btn.addEventListener('click', function () {
+    const modal = this.closest('.modal');
+    closeModal(modal);
+  });
+});
+
+pgButton.forEach(btn => {
   btn.addEventListener('click', function () {
     const modal = this.closest('.modal');
     closeModal(modal);

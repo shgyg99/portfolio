@@ -15,6 +15,7 @@
   --accent-color: #aed9e0;
   --light-bg: #faf3dd;
   --border-color: #ffa69e;
+  --navbar-color: #252323;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -260,13 +261,14 @@ img {
 .navbar {
   margin: 10px 0;
   padding: 15px 20px;
-  background-color: var(--secondary-color);
+  background-color: var(--navbar-color);
   position: sticky;
   z-index: 2000;
   top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
 }
 
 .navbar__resume-link {
@@ -670,7 +672,6 @@ img {
   .navbar {
     margin: 20px 0;
     padding: 10px 20px;
-    background-color: var(--secondary-color);
     position: sticky;
     top: 20px;
   }
